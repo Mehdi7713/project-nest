@@ -55,7 +55,7 @@ export class StationService {
   getListStation() {
     let StationList: Station[] = [];
     // let ListStation = this.list.find().exec();
-    for(var i = 0 ; i < this.list.length ; i++){
+    for(var i = 0 ; i < 5 ; i++){
       StationList.push(this.list[i]);
     }
     return StationList;
