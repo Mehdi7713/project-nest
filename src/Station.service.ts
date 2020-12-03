@@ -1,6 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import data from './data.json';
+import data from './data/data.json';
 import { Station } from './Station';
+
+
+
 
 @Injectable()
 export class StationService {
