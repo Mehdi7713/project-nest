@@ -8,8 +8,8 @@ export class StationController {
   }
 
   @Get()
-  getListStation(): string[]{
-    return this.stationservice.getListName();
+  getListStation(): Station[]{
+    return this.stationservice.getListStation();
   }
   @Get('/:name')
   getStation(@Param('name') name): Station{

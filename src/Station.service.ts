@@ -49,13 +49,13 @@ export class StationService {
     return this.list.find(x => x.name === name);
   }
 
-  getListName() {
-    let TitleList: string[] = [];
+  getListStation() {
+    let StationList: Station[] = [];
     // let ListStation = this.list.find().exec();
     for(var i = 0 ; i < this.list.length ; i++){
-      TitleList.push(this.list[i].name);
+      StationList.push(this.list[i]);
     }
-    return TitleList;
+    return StationList;
   }
 
   addFavouriteStation(name: string){
