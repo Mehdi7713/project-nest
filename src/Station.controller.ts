@@ -7,6 +7,7 @@ export class StationController {
   constructor(private readonly stationservice: StationService) {
   }
 
+
   @Get()
   getListStation(): Station[]{
     return this.stationservice.getListStation();
